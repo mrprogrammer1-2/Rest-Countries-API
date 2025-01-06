@@ -306,6 +306,9 @@ img {
 }
 
 @media (min-width: 64em) {
+  .header {
+    padding-inline: 3rem;
+  }
   .inputs {
     flex-direction: row;
     justify-content: space-between;
