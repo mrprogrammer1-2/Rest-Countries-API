@@ -55,7 +55,11 @@ useEffect(()=> {
           />
         </div>
         {isLoading && <p className='loading'>Loading Data ....</p>}
-        {fetchError && <p>{`Error: ${fetchError}`}</p>}
+        {fetchError && <p style={{
+          color:'red',
+          textAlign:"center",
+          marginTop:"3rem"
+        }}>{`Error: ${fetchError}`}</p>}
         { !fetchError && !isLoading && <Content 
           setShowModal={setShowModal}
           setModalData={setModalData}
