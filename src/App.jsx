@@ -19,7 +19,7 @@ useEffect(()=> {
 
   const fetchData = async ()=> {
     try {
-      const response = await fetch('https://mrprogrammer1-2.github.io/Rest-Countries-api/data/data.json')
+      const response = await fetch('/Rest-Countries-api/data/data.json')
       if (!response.ok) throw Error("Please, Reload the page.")
       const result = await response.json()
       setContent(result)
