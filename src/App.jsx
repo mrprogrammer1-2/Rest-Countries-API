@@ -19,7 +19,7 @@ useEffect(()=> {
 
   const fetchData = async ()=> {
     try {
-      const response = await fetch('./data/data.json')
+      const response = await fetch('data/data.json')
       if (!response.ok) throw Error("Please, Reload the page.")
       const result = await response.json()
       setContent(result)
